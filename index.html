@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Loading...</title>
+    <link rel="icon" id="favicon" href="assets/32314.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="avatar-container">
+                <img id="avatar-img" src="assets/32314.png" alt="头像" class="avatar">
+                <div id="avatar-tooltip" class="tooltip"></div>
+            </div>
+            <h1 id="main-title">Loading...</h1>
+        </header>
+
+        <main>
+            <p id="slogan"></p>
+            <div class="donation-buttons">
+                <button id="paypal-btn" class="btn paypal-icon" title="PayPal"><img src="assets/paypal_icon.svg" alt="PayPal"></button>
+                <button id="wechat-btn" class="btn wechat-icon" title="微信"><img src="assets/wechat_icon.svg" alt="微信" data-title-cn="微信" data-title-en="WeChat"></button>
+                <button id="alipay-btn" class="btn alipay-icon" title="支付宝"><img src="assets/alipay_icon.svg" alt="支付宝" data-title-cn="支付宝" data-title-en="Alipay"></button>
+                <button id="btc-btn" class="btn btc-icon" title="比特币"><img src="assets/btc_icon.svg" alt="比特币" data-title-cn="比特币" data-title-en="Bitcoin"></button>
+                <button id="eth-btn" class="btn eth-icon" title="以太坊"><img src="assets/eth_icon.svg" alt="以太坊" data-title-cn="以太坊" data-title-en="Ethereum"></button>
+                <button id="usdc-btn" class="btn usdc-icon" title="USDC"><img src="assets/usdc_logo.png" alt="USDC" data-title-cn="USDC" data-title-en="USDC"></button>
+                <button id="usdt-btn" class="btn usdt-icon" title="USDT"><img src="assets/usdt_Logo.png" alt="USDT" data-title-cn="USDT" data-title-en="USDT"></button>
+            </div>
+        </main>
+
+        <footer>
+            <p id="copyright-text"></p>
+            <p class="footer-links">
+                <a id="contact-me-link" href="mailto:"></a>
+                <span class="separator">|</span>
+                <a href="#" id="about-me-link"></a>
+                <span class="separator">|</span>
+                <a id="blog-link" href="#" target="_blank"></a>
+            </p>
+        </footer>
+    </div>
+
+    <!-- 弹窗 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-qr-image" src="" alt="QR Code">
+            <p id="modal-text"></p>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
